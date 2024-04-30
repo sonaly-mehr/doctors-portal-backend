@@ -20,7 +20,7 @@ app.use(cookieParser())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.use('/api/v1', routes)
+app.use('https://doctors-portal-backend-f9sn.onrender.com', routes)
 
 // eslint-disable-next-line no-unused-vars, @typescript-eslint/no-unused-vars
 app.get('/', async (req, res, next) => {
